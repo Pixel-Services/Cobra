@@ -22,12 +22,25 @@
             <url>https://maven.pixel-services.com/releases</url>
         </repository>
     </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>22</source>
+                    <target>22</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
             <groupId>com.pixelservices</groupId>
             <artifactId>PTK</artifactId>
-            <version>1.1.6-ALPHA</version>
+            <version>1.1.5-ALPHA</version>
         </dependency>
         <dependency>
             <groupId>com.pixelservices</groupId>
